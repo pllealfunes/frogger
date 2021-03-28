@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Frogger</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <h1 id="game_title">FROGGER</h1>
+  <canvas id="myCanvas" width="420" height="420" style="border:1px">
+
+  </canvas>
+  <div id="game_over">
+    <h1 id="lost_title">Game Over!</h1>
+    <button class="play-again">Play Again</button>
+  </div>
+  <div id="app">
+    <h1 id="list_title"> Winner's List</h1>
+    <p>
+      <input v-model="newWinner"><button @click="addWinner">Our Champion!</button><button class="play-again">Play
+        Again</button>
+    </p>
+    <div v-for="(winner,n) in winners">
+      <p>
+        <span class="winner">{{winner}}</span>
+      </p>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

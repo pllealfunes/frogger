@@ -1,0 +1,55 @@
+body{
+    background-color:black;
+  }
+  
+  canvas {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+  }
+  
+  #game_over{
+    display: none;
+  }
+  #lost_title{
+    color:red;
+    text-align:center;
+    font-size: 80px;
+  }
+  
+  #play_again{
+    width:100px;
+    height:50px;
+    border:none;
+    background-color: green;
+    color:white;
+  }
+  
+  h1 {
+    text-align: center;
+    color: green;
+    font-size:50px;
+  }
+  
+  #list_title{
+    color:gold;
+    font-size:70px;
+  }
+  
+  button,#play_again{
+    margin-left:15px;
+    height:20px;
+    border:none;
+    background-color: green;
+    color:white;
+  }
+  
+  div{
+    color:gold;
+    text-align:center;    
+  }
+   
+  
+  
